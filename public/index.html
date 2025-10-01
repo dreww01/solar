@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional solar solutions company in Nigeria. Quality installations, nationwide service, and premium solar equipment.">
+    <meta name="keywords" content="solar energy, solar panels, Nigeria, solar installation, renewable energy">
+    <title>SolarTech Nigeria - Premium Solar Solutions Nationwide</title>
+    <link rel="icon" type="image/png" href="images/logo.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Added Lucide icons for modern icon set -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Added Tailwind dark mode configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-gray-900 bg-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- Navigation -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Updated logo to use local image -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="images/logo.jpg" alt="SolarTech Logo" class="w-10 h-10">
+                    <span class="text-2xl font-bold text-blue-600 dark:text-blue-400">SolarTech</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html"
+                        class="text-blue-600 dark:text-blue-400 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200">Home</a>
+                    <a href="about.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200">About
+                        Us</a>
+                    <a href="services.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200">Services</a>
+                    <a href="testimonials.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200">Testimonials</a>
+                    <a href="gallery.html"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200">Gallery</a>
+                    <!-- Added dark mode toggle button -->
+                    <button id="theme-toggle"
+                        class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
+                        aria-label="Toggle dark mode">
+                        <i data-lucide="sun" class="w-5 h-5 dark:hidden"></i>
+                        <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+                    </button>
+                    <a href="contact.html"
+                        class="bg-blue-600 dark:bg-blue-500 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-200 hover:shadow-lg hover:scale-105">Get
+                        Quote</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center gap-3 md:hidden">
+                    
+                    <!-- Added mobile dark mode toggle -->
+                    <button id="theme-toggle-mobile"
+                        class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
+                        aria-label="Toggle dark mode">
+                        <i data-lucide="sun" class="w-5 h-5 dark:hidden"></i>
+                        <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="p-2" aria-label="Toggle menu">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-blue-600 dark:text-blue-400 font-medium py-2">Home</a>
+                <a href="about.html"
+                    class="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 py-2 transition-colors">About
+                    Us</a>
+                <a href="services.html"
+                    class="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 py-2 transition-colors">Services</a>
+                <a href="testimonials.html"
+                    class="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 py-2 transition-colors">Testimonials</a>
+                <a href="gallery.html"
+                    class="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 py-2 transition-colors">Gallery</a>
+                <a href="contact.html"
+                    class="block bg-blue-600 dark:bg-blue-500 text-white px-6 py-2.5 rounded-full text-center hover:bg-blue-700 dark:hover:bg-blue-600 transition-all">Get
+                    Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left animate-fade-in">
+                    <h1
+                        class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
+                        Power your future with <span class="text-blue-600 dark:text-blue-400">clean energy</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                        Nigeria's trusted solar solutions provider. We deliver premium installations with quality
+                        materials, swift project completion, and nationwide service coverage.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="contact.html"
+                            class="group bg-blue-600 dark:bg-blue-500 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-200 inline-flex items-center justify-center gap-2 hover:shadow-xl hover:scale-105">
+                            Get Free Consultation
+                            <i data-lucide="arrow-right"
+                                class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="gallery.html"
+                            class="group border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-50 dark:hover:bg-gray-800 transition-all duration-200 inline-flex items-center justify-center gap-2">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+                <div class="relative animate-fade-in-delay">
+                    <!-- Updated to use local image -->
+                    <img src="images/hero-solar.jpg" alt="Solar Installation"
+                        class="rounded-2xl shadow-2xl w-full hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl hidden lg:block animate-slide-up">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full">
+                                <i data-lucide="users" class="w-8 h-8 text-blue-600 dark:text-blue-400"></i>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-gray-900 dark:text-white">500+</div>
+                                <div class="text-gray-600 dark:text-gray-400">Happy Customers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">Why choose
+                    SolarTech?</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">We're committed to delivering
+                    excellence in every installation</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div
+                    class="card-hover bg-blue-50 dark:bg-gray-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="bg-blue-600 dark:bg-blue-500 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="thumbs-up" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Customer Satisfaction</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Your happiness is our priority. We
+                        ensure every project exceeds expectations with personalized service and ongoing support.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div
+                    class="card-hover bg-blue-50 dark:bg-gray-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="bg-blue-600 dark:bg-blue-500 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Swift Delivery</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Time is valuable. Our efficient team
+                        completes installations quickly without compromising on quality or safety standards.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="card-hover bg-blue-50 dark:bg-gray-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="bg-blue-600 dark:bg-blue-500 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="map-pin" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Nationwide Service</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">From Lagos to Abuja, Port Harcourt to
+                        Kano - we travel anywhere in Nigeria to bring solar power to your doorstep.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div
+                    class="card-hover bg-blue-50 dark:bg-gray-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="bg-blue-600 dark:bg-blue-500 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="award" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Quality Materials</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">We use only premium, internationally
+                        certified solar panels, batteries, and equipment that guarantee long-lasting performance.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div
+                    class="card-hover bg-blue-50 dark:bg-gray-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="bg-blue-600 dark:bg-blue-500 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="wrench" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Professional Installation</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Our certified technicians ensure clean,
+                        standard-compliant installations that are both aesthetically pleasing and highly functional.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div
+                    class="card-hover bg-blue-50 dark:bg-gray-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="bg-blue-600 dark:bg-blue-500 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="shopping-bag" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Equipment Sales</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Browse our range of premium solar
+                        panels, inverters, batteries, and accessories available for purchase and delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                        Comprehensive solar solutions for every need</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                        From residential homes to large commercial complexes, we provide tailored solar solutions that
+                        maximize efficiency and savings. Our expert team handles everything from consultation to
+                        installation and maintenance.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle"
+                                class="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1"></i>
+                            <span class="text-gray-700 dark:text-gray-300">Residential solar installations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle"
+                                class="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1"></i>
+                            <span class="text-gray-700 dark:text-gray-300">Commercial & industrial systems</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle"
+                                class="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1"></i>
+                            <span class="text-gray-700 dark:text-gray-300">Battery storage solutions</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle"
+                                class="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1"></i>
+                            <span class="text-gray-700 dark:text-gray-300">Maintenance & support services</span>
+                        </li>
+                    </ul>
+                    <a href="services.html"
+                        class="group inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium text-lg hover:gap-3 transition-all">
+                        Explore all services
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Updated to use local images -->
+                    <img src="images/residential-solar.jpg" alt="Installation"
+                        class="rounded-xl shadow-lg w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    <img src="images/commercial-solar.jpg" alt="Equipment"
+                        class="rounded-xl shadow-lg w-full h-64 object-cover mt-8 hover:scale-105 transition-transform duration-300">
+                    <img src="images/battery-storage.jpg" alt="Commercial"
+                        class="rounded-xl shadow-lg w-full h-64 object-cover -mt-8 hover:scale-105 transition-transform duration-300">
+                    <img src="images/maintenance.jpg" alt="Happy Customer"
+                        class="rounded-xl shadow-lg w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-blue-600 dark:bg-blue-700 text-white transition-colors duration-300">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="animate-fade-in">
+                    <div class="text-5xl font-bold mb-2">500+</div>
+                    <div class="text-blue-100 text-lg">Projects Completed</div>
+                </div>
+                <div class="animate-fade-in-delay">
+                    <div class="text-5xl font-bold mb-2">98%</div>
+                    <div class="text-blue-100 text-lg">Customer Satisfaction</div>
+                </div>
+                <div class="animate-fade-in-delay-2">
+                    <div class="text-5xl font-bold mb-2">36</div>
+                    <div class="text-blue-100 text-lg">States Covered</div>
+                </div>
+                <div class="animate-fade-in-delay-3">
+                    <div class="text-5xl font-bold mb-2">10+</div>
+                    <div class="text-blue-100 text-lg">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">Ready to go
+                solar?</h2>
+            <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                Join hundreds of satisfied customers across Nigeria who have made the switch to clean, reliable solar
+                energy. Get your free consultation today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="group bg-blue-600 dark:bg-blue-500 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-200 inline-flex items-center justify-center gap-2 hover:shadow-xl hover:scale-105">
+                    Request Free Quote
+                    <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="tel:+2341234567890"
+                    class="group border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-50 dark:hover:bg-gray-800 transition-all duration-200 inline-flex items-center justify-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-gray-300 py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="images/logo.jpg" alt="SolarTech Logo" class="w-8 h-8">
+                        <span class="text-2xl font-bold text-white">SolarTech</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">Nigeria's trusted partner for premium solar solutions and
+                        renewable energy.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-blue-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition-colors">Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-blue-400 transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="hover:text-blue-400 transition-colors">Residential Solar</a>
+                        </li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition-colors">Commercial Solar</a>
+                        </li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition-colors">Battery Storage</a>
+                        </li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition-colors">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="phone" class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5"></i>
+                            <span>+234 123 456 7890</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="mail" class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5"></i>
+                            <span>info@solartech.ng</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5"></i>
+                            <span>Lagos, Nigeria</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SolarTech Nigeria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- Initialize Lucide icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
